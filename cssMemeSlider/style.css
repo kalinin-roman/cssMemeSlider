@@ -56,6 +56,34 @@ body {
   margin-left: -75%;
 }
 
+body:has(input[value="first"]:checked) .btn1 {
+  background-color: inherit;
+  border: 0.1em solid #7ea9f8;
+  height: 0.6em;
+  width: 0.6em;
+}
+
+body:has(input[value="second"]:checked) .btn2 {
+  background-color: inherit;
+  border: 0.1em solid #7ea9f8;
+  height: 0.6em;
+  width: 0.6em;
+}
+
+body:has(input[value="third"]:checked) .btn3 {
+  background-color: inherit;
+  border: 0.1em solid #7ea9f8;
+  height: 0.6em;
+  width: 0.6em;
+}
+
+body:has(input[value="fourth"]:checked) .btn4 {
+  background-color: inherit;
+  border: 0.1em solid #7ea9f8;
+  height: 0.6em;
+  width: 0.6em;
+}
+
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -74,10 +102,14 @@ body {
 
 .btn::before {
   content: "";
-  padding: 10px;
+  padding: 0.5em;
 }
 .btn:hover {
   background-color: #fff;
+}
+
+.btn:active {
+  background-color: red;
 }
 
 input[name="r-btn"] {
